@@ -1,0 +1,13 @@
+import { start } from './js/start-func';
+import './js/modal-auth';
+import './js/auth';
+import './js/pagination';
+import './js/usersLib';
+import './js/modal_film';
+import './js/themeSwitcher';
+import './js/scroll';
+import './js/footer-modal';
+import './js/footer-modal-markup';
+import './js/playSomething';
+import './js/liveSearch';
+start();

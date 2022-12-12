@@ -1,0 +1,144 @@
+.lib-header {
+  background-image: linear-gradient($header-bgc, $header-bgc),
+    url(/src/images/header/library/mobile/library-background-mobile.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .lib-header {
+    background-image: linear-gradient($header-bgc, $header-bgc),
+      url(/src/images/header/library/mobile/library-background-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  .lib-header {
+    background-image: linear-gradient($header-bgc, $header-bgc),
+      url(/src/images/header/library/mobile/library-background-mobile@3x.jpg);
+  }
+}
+
+/*Tablet фон*/
+@media screen and (min-width: 768px) {
+  .lib-header {
+    background-image: linear-gradient($header-bgc, $header-bgc),
+      url(/src/images/header/library/tablet/library-background-tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .lib-header {
+      background-image: linear-gradient($header-bgc, $header-bgc),
+        url(/src/images/header/library/tablet/library-background-tablet@2x.jpg);
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    .lib-header {
+      background-image: linear-gradient($header-bgc, $header-bgc),
+        url(/src/images/header/library/tablet/library-background-tablet@3x.jpg);
+    }
+  }
+}
+
+/*Desctop фон*/
+@media screen and (min-width: 1280px) {
+  .lib-header {
+    background-image: linear-gradient($header-bgc, $header-bgc),
+      url(/src/images/header/library/desktop/library-background-desktop.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .lib-header {
+      background-image: linear-gradient($header-bgc, $header-bgc),
+        url(/src/images/header/library/desktop/library-background-desktop@2x.jpg);
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    .lib-header {
+      background-image: linear-gradient($header-bgc, $header-bgc),
+        url(/src/images/header/library/desktop/library-background-desktop@3x.jpg);
+    }
+  }
+}
+
+/*Стилізація кнопок */
+.library__btns {
+  margin-top: 62px;
+  margin-right: -20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.library__button {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: $white-text;
+  line-height: 1.33;
+  font-weight: 500;
+
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 36px;
+  padding-right: 36px;
+
+  width: 130px;
+  height: 44px;
+  border: 1px solid $white-text;
+  border-radius: 5px;
+  background: none;
+
+  margin-right: 20px;
+  transition: background-color border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button--accent {
+  background-color: $orange-btn;
+  border-color: $orange-btn;
+}
+
+@media screen and (min-width: 768px) {
+  .library__btns {
+    margin-top: 40px;
+    margin-right: -32px;
+  }
+  .library__button {
+    width: 152px;
+    height: 44px;
+    padding: 13px, 46px;
+    margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .library__btns {
+    margin-right: -16px;
+  }
+
+  .library__button {
+    width: 148px;
+    height: 42px;
+    margin-right: 16px;
+    padding: 12px 41px;
+  }
+}
+/*Ховери*/
+
+.library__button:hover {
+  background-color: $orange-hover;
+  border-color: $orange-hover;
+}
